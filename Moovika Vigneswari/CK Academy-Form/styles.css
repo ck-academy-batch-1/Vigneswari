@@ -1,0 +1,148 @@
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    body {
+        background: linear-gradient(#5680E9, #C1C8E4, #8860D0);
+        padding: 0 10px;
+    }
+    
+    .form-main {
+        max-width: 500px;
+        width: 100%;
+        background: #fff;
+        margin: 20px auto;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+        padding: 30px;
+    }
+    
+    .form-main .title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: hsl(214, 44%, 38%);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .form-main .form {
+        width: 100%;
+    }
+    
+    .form-main .form .inputfield {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .form-main .form .inputfield label {
+        width: 200px;
+        color: #757575;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .form-main .form .inputfield .input,
+    .form-main .form .inputfield .textarea {
+        width: 100%;
+        outline: none;
+        border: 1px solid #d5dbd9;
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .form-main .form .inputfield .textarea {
+        width: 100%;
+        height: 125px;
+        resize: none;
+    }
+    
+    .form-main .form .inputfield .custom_select {
+        position: relative;
+        width: 100%;
+        height: 37px;
+    }
+    
+    .form-main .form .inputfield .custom_select:before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        border: 8px solid;
+        border-color: #d5dbd9 transparent transparent transparent;
+        pointer-events: none;
+    }
+    
+    .form-main .form .inputfield .custom_select select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+    }
+    
+    .form-main .form .inputfield .input:focus,
+    .form-main .form .inputfield .textarea:focus,
+    .form-main .form .inputfield .custom_select select:focus {
+        border: 1px solid linear-gradient( hsl(213, 35%, 90%), hsl(218, 56%, 74%));
+    }
+    
+    .form-main .form .inputfield p {
+        font-size: 14px;
+        color: #757575;
+    }
+    
+    .form-main .form .inputfield .btn {
+        width: 50%;
+        font-size: 15px;
+        background: linear-gradient( hsl(210, 8%, 59%), hsl(218, 42%, 45%));
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        outline: none;
+    }
+    
+    .form-main .form .inputfield .btn:hover {
+        background: linear-gradient( hsl(268, 54%, 57%), hsl(218, 35%, 29%));
+    }
+    
+    .footer {
+        font-size: 1rem;
+        padding-top: 10%;
+    }
+    
+    .footer a {
+        color: inherit;
+    }
+    
+    .footer-bottom {
+        background-color: hsl(230, 59%, 16%);
+        padding: 5px;
+        text-align: center;
+        color: white;
+    }
+    
+    @media (max-width: 420px) {
+        .form-main .form .inputfield {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .form-main .form .inputfield label {
+            margin-bottom: 5px;
+        }
+        .form-main .form .inputfield.terms {
+            flex-direction: row;
+        }
+    }
