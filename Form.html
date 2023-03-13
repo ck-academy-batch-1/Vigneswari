@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Form</title>
+</head>
+<body style="background: rgba(184, 184, 184, 0.76) ;">
+    <div class="container">
+        <h1 class="text-center">Form with All Input Types and Attributes</h1><br><br>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="text">Text Input:</label>
+                    <input type="text" class="form-control" placeholder="Enter text" size="10" required autofocus>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="text">Text Input:</label>
+                    <input type="text" class="form-control" placeholder="Readonly" readonly>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="text">Text Input:</label>
+                    <input type="text" class="form-control" placeholder="Disabled" disabled>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email Input:</label>
+                    <input type="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password Input:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" min="3" max="6">
+                    <div class="form-check">
+                    <input type="checkbox" class="form-check-input" >
+                    <label class="form-check-label" for="checkbox">Save Password</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="number">Number Input:</label>
+                    <input type="number" class="form-control" placeholder="Enter number" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="tel">Telephone Input:</label>
+                    <input type="tel" class="form-control" value="1234567890" maxlength="10" step="123-123-1234">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="date">Date Input:</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="select">DropDown Input:</label>
+                    <select class="form-control" id="select">
+                        <option>No1</option>
+                        <option>No2</option>
+                        <option>No3</option>
+                        <option>No3</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="radio">Radio Button:</label><br>
+                    <div class="form-check">
+                    <input type="radio" class="form-check-input" id="radio" name="optradio1">radio 1 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" class="form-check-input" id="radio" name="optradio2">radio 2 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" class="form-check-input" id="radio" name="optradio3">radio 3 &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" class="form-check-input" id="radio" name="optradio4">radio 4 &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                </div>                   
+                <div class="form-group col-md-6">     
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" class="form-control-file" accept=".pdf">                
+                </div>
+                <div class="form-group col-md-6">    
+                    <label for="exampleInputFile">File input(Multiple File)</label>
+                    <input type="file" class="form-control-file" multiple accept="application/pdf">               
+                </div>
+                <div class="form-group col-md-6">    
+                    <label for="example-url-input">Url Input</label>
+                    <input class="form-control" type="url"  pattern="url">
+                </div>
+                
+                <div class="form-group col-md-6">          
+                    <label for="example-datetime-local-input">Datetime Local Input:</label>
+                    <input class="form-control" type="datetime-local" >                
+                </div>
+                <div class="form-group col-md-6">          
+                    <label for="example-date-input">Date Input:</label>
+                    <input class="form-control" type="date">                
+                </div>
+                <div class="form-group col-md-6">
+                <label for="example-time-input">Time Input:</label>
+                <input class="form-control" type="time">                
+                </div>
+                <div class="form-group col-md-6">          
+                    <label for="example-Week-input">Week Input:</label>
+                    <input class="form-control" type="week">                
+                </div>
+                <div class="form-group col-md-6">         
+                    <label for="example-month-input">Month Input:</label>
+                    <input class="form-control" type="month">                
+                </div>
+                <div class="form-group col-md-6">          
+                    <label for="exampleTextarea">Textarea:</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>                
+                </div><br>
+            </div>  
+            <br><br>  
+            <div class="text-center">
+                <input type="submit" class="btn btn-info col-sm-5">
+                <input type="reset" class="btn btn-info col-sm-5">
+                <br><br><br>
+            </div>
+        </form>        
+    </div>            
+
+</body>
+
+</html>
